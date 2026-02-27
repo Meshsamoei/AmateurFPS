@@ -1,8 +1,8 @@
 extends CharacterBody3D
 
 
-const SPEED = 4
-const JUMP_VELOCITY = 4.5
+@export var SPEED = 4
+const JUMP_VELOCITY = 5.5
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -15,11 +15,20 @@ func _unhandled_input(event):
 			%Camera3D.rotation_degrees.x, -90, 80
 		)
 	
-	elif event.is_action_pressed("ui_accept"):
+	elif event.is_action_pressed("ESC"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+
+func _process(_delta):
+	if Input.is_action_just_pressed("RMB"):
+		get_tree().reload_current_scene()
 		
-		
+
 func _physics_process(delta):
+	if Input.is_action_pressed("SPRINT"):
+		SPEED = 8
+	else:
+		SPEED = 4
+		
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -28,8 +37,8 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
+	# Get the input direction and handle the movement/deceleration
+ 
 	var input_dir = Input.get_vector("A", "D", "W", "S")
 	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if direction:

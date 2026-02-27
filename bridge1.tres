@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://daea4rfdev28m"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wbfu4"]
+load_path = "res://.godot/imported/outline_flat_seamless_arabic_geometric_ornament_pattern.jpg-56f586c8c02b16d14df8349500f94123.s3tc.ctex"
+
+[resource]
+albedo_color = Color(0.35607943, 0.29334205, 0.06701783, 1)
+albedo_texture = SubResource("CompressedTexture2D_wbfu4")
+uv1_scale = Vector3(0.2, 0.2, 0.2)
+uv1_triplanar = true
