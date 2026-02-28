@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bg4ej3gn28gfl"]
+
+[ext_resource type="PackedScene" uid="uid://cusub2sg3c11p" path="res://mob/Bots/CrawlerBot.glb" id="1_4g1vs"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4g1vs"]
+size = Vector3(5.308838, 3.7548828, 5.741211)
+
+[node name="CrawlerBot" unique_id=1993814443 instance=ExtResource("1_4g1vs")]
+
+[node name="Muzzle" type="Marker3D" parent="Armature" parent_id_path=PackedInt32Array(640850833) index="1" unique_id=306260920]
+transform = Transform3D(0.99999976, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, 1.4690048, 1.2641861, 2.7151024)
+
+[node name="Muzzle2" type="Marker3D" parent="Armature" parent_id_path=PackedInt32Array(640850833) index="2" unique_id=1549635544]
+transform = Transform3D(0.99999976, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, 1.4690048, 1.557461, 2.412663)
+
+[node name="Muzzle3" type="Marker3D" parent="Armature" parent_id_path=PackedInt32Array(640850833) index="3" unique_id=76089445]
+transform = Transform3D(0.99999976, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, -1.4694611, 1.2641861, 2.7360168)
+
+[node name="Muzzle4" type="Marker3D" parent="Armature" parent_id_path=PackedInt32Array(640850833) index="4" unique_id=820523497]
+transform = Transform3D(0.99999976, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, -1.4694611, 1.557461, 2.4335773)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=551988627]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 1.8775365, 0)
+shape = SubResource("BoxShape3D_4g1vs")
