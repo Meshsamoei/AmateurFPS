@@ -18,7 +18,7 @@ unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.50954, -0.20246053)
 
 [node name="gun_model" parent="Camera3D" unique_id=803383773 instance=ExtResource("1_oul6g")]
-transform = Transform3D(-0.4, 0, -6.039832e-08, 0, 0.4, 0, 6.039832e-08, 0, -0.4, 0.43231988, -0.138713, -0.52725077)
+transform = Transform3D(-0.4, 0, -6.039832e-08, 0, 0.4, 0, 6.039832e-08, 0, -0.4, 0.43231988, -0.22977781, -0.52725077)
 
 [node name="Marker3D" type="Marker3D" parent="Camera3D" unique_id=818923760]
 unique_name_in_owner = true

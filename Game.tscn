@@ -88,7 +88,7 @@ shader_parameter/wave_frequency = 5.0
 [node name="Game" type="Node3D" unique_id=1914739955]
 
 [node name="Player" parent="." unique_id=662786653 instance=ExtResource("1_wbfu4")]
-transform = Transform3D(-0.6427876, 0, 0.7660445, 0, 1, 0, -0.7660445, 0, -0.6427876, 29, 26.900002, 32)
+transform = Transform3D(-0.6427876, 0, 0.7660445, 0, 1, 0, -0.7660445, 0, -0.6427876, 31, 25.600002, 30.4)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=534491471]
 transform = Transform3D(1, 0, 0, 0, 2.9802322e-08, 1, 0, -1, 2.9802322e-08, 0, 70, 0)
@@ -226,5 +226,5 @@ material_override = SubResource("ShaderMaterial_joorw")
 texture = ExtResource("5_r0x5m")
 
 [node name="Mob" parent="." unique_id=1696934873 instance=ExtResource("7_3mrqo")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 25.720001, 35)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.800001, 24.9, 0)
 gravity_scale = 0.0

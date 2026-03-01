@@ -13,3 +13,5 @@ script = ExtResource("1_lslm0")
 shape = SubResource("SphereShape3D_im51c")
 
 [node name="projectile" parent="." unique_id=276939822 instance=ExtResource("1_im51c")]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
