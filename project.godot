@@ -17,7 +17,7 @@ config/tags=PackedStringArray("3d", "demo", "gui")
 run/main_scene="uid://dnnqbv7hh17rv"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 boot_splash/bg_color=Color(0.115615524, 0.12923563, 0.24410352, 1)
-boot_splash/image="uid://byfjv3hepnf2q"
+boot_splash/image="uid://ckr30dc6hf0yp"
 config/icon="res://icon.svg"
 
 [display]
@@ -26,7 +26,7 @@ window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/size/mode=2
 window/stretch/mode="viewport"
-mouse_cursor/custom_image="uid://duwqqurf8of1o"
+mouse_cursor/custom_image="uid://n3cubb5nv3sf"
 
 [input]
 

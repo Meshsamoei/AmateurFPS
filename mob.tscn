@@ -1,7 +1,7 @@
-[gd_scene format=3 uid="uid://du4tno8knuq22"]
+[gd_scene format=3 uid="uid://byr3bs7mxg26b"]
 
 [ext_resource type="PackedScene" uid="uid://dkmmdjibhqrn7" path="res://mob/bat/bat_model.tscn" id="1_dy6sc"]
-[ext_resource type="Script" uid="uid://bsflmccplefx3" path="res://mob.gd" id="1_nokgg"]
+[ext_resource type="Script" uid="uid://bsflmccplefx3" path="res://level/mob.gd" id="1_nokgg"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_nokgg"]
 radius = 0.37388468
@@ -15,3 +15,23 @@ shape = SubResource("SphereShape3D_nokgg")
 
 [node name="bat_model" parent="." unique_id=625638129 instance=ExtResource("1_dy6sc")]
 unique_name_in_owner = true
+
+[node name="Skeleton3D" parent="bat_model/Armature" parent_id_path=PackedInt32Array(625638129, 1894661748) index="0" unique_id=1158836801]
+bones/0/position = Vector3(0, -0.007400004, 0)
+bones/1/rotation = Quaternion(-0.028654926, 0.18848532, -0.6867176, 0.7014778)
+bones/2/rotation = Quaternion(-0.056015443, -0.016041048, 0.27483782, 0.9597235)
+bones/3/rotation = Quaternion(0.04121358, 0.059984986, 0.2647528, 0.96156603)
+bones/4/rotation = Quaternion(-0.028654926, -0.18848532, 0.6867176, 0.7014778)
+bones/5/rotation = Quaternion(-0.056015443, 0.016041048, -0.27483782, 0.9597235)
+bones/6/rotation = Quaternion(0.04121358, -0.059984986, -0.2647528, 0.96156603)
+bones/8/rotation = Quaternion(3.8433356e-08, 0.69088244, 0.72296715, 1.6451473e-08)
+bones/11/rotation = Quaternion(2.5423756e-08, 0.69088244, 0.72296715, 3.637758e-08)
+
+[node name="Timer" type="Timer" parent="." unique_id=1653891230]
+unique_name_in_owner = true
+wait_time = 3.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+
+[editable path="bat_model"]

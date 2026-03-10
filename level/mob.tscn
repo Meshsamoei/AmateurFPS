@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://du4tno8knuq22"]
+
+[ext_resource type="PackedScene" uid="uid://dkmmdjibhqrn7" path="res://mob/bat/bat_model.tscn" id="1_dy6sc"]
+[ext_resource type="Script" uid="uid://bsflmccplefx3" path="res://level/mob.gd" id="1_nokgg"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_nokgg"]
+radius = 0.37388468
+
+[node name="Mob" type="RigidBody3D" unique_id=1696934873]
+lock_rotation = true
+script = ExtResource("1_nokgg")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1079445016]
+shape = SubResource("SphereShape3D_nokgg")
+
+[node name="bat_model" parent="." unique_id=625638129 instance=ExtResource("1_dy6sc")]
+unique_name_in_owner = true
+<<<<<<< HEAD:level/mob.tscn
+<<<<<<< HEAD:level/mob.tscn
+
+[node name="Skeleton3D" parent="bat_model/Armature" parent_id_path=PackedInt32Array(625638129, 1894661748) index="0" unique_id=1158836801]
+bones/0/position = Vector3(0, 0.01865258, 0)
+bones/1/rotation = Quaternion(0.22049852, -0.026020318, -0.60090697, 0.7678634)
+bones/2/rotation = Quaternion(0.13281813, 0.061642226, 0.4162249, 0.8973943)
+bones/3/rotation = Quaternion(0.032442376, 0.06215693, 0.35158372, 0.9335272)
+bones/4/rotation = Quaternion(0.22049852, 0.026020318, 0.60090697, 0.7678634)
+bones/5/rotation = Quaternion(0.13281813, -0.061642226, -0.4162249, 0.8973943)
+bones/6/rotation = Quaternion(0.032442376, -0.06215693, -0.35158372, 0.9335272)
+bones/8/rotation = Quaternion(2.1456133e-08, 0.59554756, 0.8033201, 2.4814563e-08)
+bones/11/rotation = Quaternion(3.0503205e-08, 0.59554756, 0.8033201, 3.4577038e-08)
+
+[node name="Timer" type="Timer" parent="." unique_id=1910468429]
+unique_name_in_owner = true
+wait_time = 2.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+
+[editable path="bat_model"]
+=======
+>>>>>>> parent of 3cf054b (Updates: Mob damage):mob.tscn
+=======
+>>>>>>> parent of 3cf054b (Updates: Mob damage):mob.tscn

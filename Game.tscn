@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://dnnqbv7hh17rv"]
 
 [ext_resource type="PackedScene" uid="uid://bsx02t354qyeo" path="res://player/player.tscn" id="1_wbfu4"]
-[ext_resource type="Material" uid="uid://dw4r6qmlj8oev" path="res://TRON.tres" id="2_sb48q"]
-[ext_resource type="Shader" uid="uid://dqql71n1dq22j" path="res://neon_tower.gdshader" id="4_r0x5m"]
-[ext_resource type="Shader" uid="uid://duw28awxaf1kk" path="res://wavyflag.gdshader" id="5_3mrqo"]
+[ext_resource type="Material" uid="uid://dw4r6qmlj8oev" path="res://level/TRON.tres" id="2_sb48q"]
+[ext_resource type="Shader" uid="uid://dqql71n1dq22j" path="res://level/neon_tower.gdshader" id="4_r0x5m"]
+[ext_resource type="Shader" uid="uid://duw28awxaf1kk" path="res://level/wavyflag.gdshader" id="5_3mrqo"]
 [ext_resource type="Texture2D" uid="uid://48mqeh4qfh1x" path="res://level/Flag_of_Kenya.svg.png" id="5_r0x5m"]
 [ext_resource type="PackedScene" uid="uid://5n2dfsbuh4ok" path="res://player/projectile/Round.tscn" id="5_t88pq"]
-[ext_resource type="PackedScene" uid="uid://du4tno8knuq22" path="res://mob.tscn" id="7_3mrqo"]
+[ext_resource type="PackedScene" uid="uid://byr3bs7mxg26b" path="res://mob.tscn" id="7_3mrqo"]
 
 [sub_resource type="Environment" id="Environment_wbfu4"]
 background_mode = 1
@@ -133,7 +133,7 @@ material = ExtResource("2_sb48q")
 [node name="Block16" type="CSGBox3D" parent="Blocks" unique_id=929238206]
 transform = Transform3D(0, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, 0, 2, -1.4799995, 54)
 use_collision = true
-size = Vector3(11, 1.95, 5)
+size = Vector3(12.645691, 1.95, 7.1523438)
 material = SubResource("ShaderMaterial_t88pq")
 
 [node name="Block7" type="CSGBox3D" parent="Blocks" unique_id=1964853714]
@@ -198,6 +198,72 @@ material = ExtResource("2_sb48q")
 
 [node name="Block3" type="CSGBox3D" parent="Blocks" unique_id=2077098460]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31, -10.48, 38)
+use_collision = true
+size = Vector3(40, 20, 30)
+material = ExtResource("2_sb48q")
+
+[node name="Block19" type="CSGBox3D" parent="Blocks" unique_id=438859601]
+transform = Transform3D(-0.0028099222, 0, 0.99999607, 0, 1, 0, -0.99999607, 0, -0.0028099222, 17.887835, -10.28, 159.53714)
+use_collision = true
+size = Vector3(40, 20, 30)
+material = ExtResource("2_sb48q")
+
+[node name="Block20" type="CSGBox3D" parent="Blocks" unique_id=627131514]
+transform = Transform3D(-0.0028099217, 0, 0.99999595, 0, 1, 0, -0.99999595, 0, -0.0028099217, 26.966476, -1.4799995, 187.51173)
+use_collision = true
+size = Vector3(11, 1.95, 5)
+material = ExtResource("2_sb48q")
+
+[node name="Block21" type="CSGBox3D" parent="Blocks" unique_id=1666832302]
+transform = Transform3D(-0.0036528984, 0, 0.999996, 0, 1, 0, -1.2999947, 0, -0.002809922, 42.924263, -1.4799995, 172.46684)
+use_collision = true
+size = Vector3(11, 1.95, 5)
+material = ExtResource("2_sb48q")
+
+[node name="Block22" type="CSGBox3D" parent="Blocks" unique_id=1278417232]
+transform = Transform3D(-0.99999595, 0, -0.0028099217, 0, 1, 0, 0.0028099217, 0, -0.99999595, 52.915794, -1.4799995, 169.43875)
+use_collision = true
+size = Vector3(11, 1.95, 5)
+material = ExtResource("2_sb48q")
+
+[node name="Block23" type="CSGBox3D" parent="Blocks" unique_id=603421828]
+transform = Transform3D(-0.99999595, 0, -0.0028099217, 0, 1, 0, 0.0028099217, 0, -0.99999595, 66.88202, -1.4799995, 157.39946)
+use_collision = true
+size = Vector3(11, 1.95, 5)
+material = SubResource("ShaderMaterial_t88pq")
+
+[node name="Block24" type="CSGBox3D" parent="Blocks" unique_id=22405364]
+transform = Transform3D(-0.0028099217, 0, 3.959984, 0, 0.99999994, 0, -0.9999959, 0, -0.01112729, 49.8849, -1.4799995, 158.44722)
+use_collision = true
+size = Vector3(11, 1.95, 5)
+material = ExtResource("2_sb48q")
+
+[node name="Block25" type="CSGBox3D" parent="Blocks" unique_id=1755217666]
+transform = Transform3D(0.009922348, 0, -1.0071083, 0, 1, 0, 3.5310588, 0, 0.0028299952, 11.486626, -1.4799995, 98.51986)
+use_collision = true
+size = Vector3(22.044922, 1.95, 5)
+material = ExtResource("2_sb48q")
+
+[node name="Block26" type="CSGBox3D" parent="Blocks" unique_id=1343798390]
+transform = Transform3D(0.99999595, 0, 0.0028100093, 0, 1, 0, -0.0028100093, 0, 0.99999595, 20.778236, -1.4799995, 120.52886)
+use_collision = true
+size = Vector3(11, 1.95, 5)
+material = ExtResource("2_sb48q")
+
+[node name="Block27" type="CSGBox3D" parent="Blocks" unique_id=2102795067]
+transform = Transform3D(0.0028100093, 0, -0.99999595, 0, 1, 0, 0.99999595, 0, 0.0028100093, 19.809149, -1.4799995, 131.53163)
+use_collision = true
+size = Vector3(11, 1.95, 5)
+material = ExtResource("2_sb48q")
+
+[node name="Block28" type="CSGBox3D" parent="Blocks" unique_id=81319407]
+transform = Transform3D(0.99999595, 0, 0.0028099217, 0, 1, 0, -0.0028099217, 0, 0.99999595, 28.994568, -1.4799995, 197.50609)
+use_collision = true
+size = Vector3(11, 1.95, 5)
+material = ExtResource("2_sb48q")
+
+[node name="Block29" type="CSGBox3D" parent="Blocks" unique_id=1261896880]
+transform = Transform3D(-0.0028099222, 0, 0.99999607, 0, 1, 0, -0.99999607, 0, -0.0028099222, 50.8006, -10.48, 128.44453)
 use_collision = true
 size = Vector3(40, 20, 30)
 material = ExtResource("2_sb48q")
