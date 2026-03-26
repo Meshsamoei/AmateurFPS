@@ -13,6 +13,9 @@ var is_dead = false  # Add a death flag
 
 func _physics_process(delta):
 	if not player or is_dead:  # Check death flag
+		# Disable all processing
+		set_physics_process(false)
+		set_process(false)
 		return
 	
 	# Calculate target position (player's position + hover offset)
@@ -50,6 +53,7 @@ func animate_bat(delta):
 	# Simple wing flap based on vertical movement
 	var vertical_movement = abs(linear_velocity.y) * 2.0
 	bat_model.rotation.x = sin(Time.get_time_dict_from_system().second * 10) * 0.2 * vertical_movement
+
 func take_damage():
 	if hp <= 0 or is_dead:
 		return
@@ -59,12 +63,7 @@ func take_damage():
 	
 	if hp == 0:
 		is_dead = true
-		animation_player.stop()
 
-		# Disable all processing
-		set_physics_process(false)
-		set_process(false)
-		
 		# Disable the bat model's processing
 		bat_model.set_process(false)
 		bat_model.set_physics_process(false)
